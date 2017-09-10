@@ -42,7 +42,7 @@ def cleaned_text(text):
         alphabet.append(chr(letter))
     for c in text:
         if c not in punctuation and c not in alphabet:
-            text = text.replace(c,' ')
+            text = text.replace(c,' ',1)
     return text
 
 ### TODO: fill out the function below that transforms the input text and window-size into a set of input/output pairs for use with our RNN model
